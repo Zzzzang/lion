@@ -11,8 +11,8 @@
 [![Java](https://img.shields.io/badge/Java-1.8-yellow.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 [![Scala](https://img.shields.io/badge/Scala-2.11.12-D72B2A.svg)](https://www.scala-lang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-5.3.1-01BC7E.svg)](https://gradle.org)
-[![Spring Boot](https://img.shields.io/badge/SpringBoot-2.1.2.RELEASE-FF69B4.svg)](https://spring.io/projects/spring-boot/)
-[![Spring Cloud](https://img.shields.io/badge/SpringCloud-Greenwich.RELEASE-5DBF3D.svg)](https://spring.io/projects/spring-cloud)
+[![Spring Boot](https://img.shields.io/badge/SpringBoot-2.1.6.RELEASE-FF69B4.svg)](https://spring.io/projects/spring-boot/)
+[![Spring Cloud](https://img.shields.io/badge/SpringCloud-Greenwich.SR1-5DBF3D.svg)](https://spring.io/projects/spring-cloud)
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/micyo202/lion/blob/master/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/micyo202/lion.svg?style=social&label=Stars)](https://github.com/micyo202/lion)
 [![GitHub Forks](https://img.shields.io/github/forks/micyo202/lion.svg?style=social&label=Fork)](https://github.com/micyo202/lion)
@@ -21,7 +21,7 @@
 
 ---
 
-本项目是使用**Gradle**构建，基于**SpringBoot 2.1.2.RELEASE、SpringCloud Greenwich.RELEASE**体系实现的一套完整微服务架构，采用**Oauth2**统一授权认证，支持**Java**、**Scala**混编、**Docker**容器化部署、**限流**、**灰度发布**等，规划将包含**大数据**、**区块链**等相关模块。
+本项目是使用**Gradle**构建，基于**SpringBoot 2.1.6.RELEASE、SpringCloud Greenwich.SR1**体系实现的一套完整微服务架构，采用**Oauth2**统一授权认证，支持**Java**、**Scala**混编、**Docker**容器化部署、**限流**、**灰度发布**等，规划将包含**大数据**、**区块链**等相关模块。
 
 利用**Spring Boot Admin**来监控各个独立Service的运行状态，利用**Turbine**来查看近实时的接口运行状态和调用频率，利用**Zipkin**进行查看链路跟踪等。
 
@@ -29,7 +29,7 @@
 
 因为采取了服务的分布，为了避免服务之间的调用“雪崩”，采用了**Hystrix**的作为熔断器，避免了服务之间的“雪崩”效应。
 
-项目整合了 **spring-boot 2.1.2 + jpa + mybatis + pagehelper**框架。
+项目整合了 **spring-boot 2.1.6 + jpa + mybatis + pagehelper**框架。
 
 项目使用**Travis CI**进行持续性**CI**，保证了最新提交代码的**build passing**，使用**Codecov**进行自动化测试代码的覆盖率。
 

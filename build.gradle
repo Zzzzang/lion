@@ -3,7 +3,7 @@ version = '1.0.0'
 
 buildscript {
     ext {
-        springBootVersion = '2.1.2.RELEASE'
+        springBootVersion = '2.1.6.RELEASE'
         generatorPluginVersion = '1.4'
         dockerVersion = '1.2'
     }
@@ -65,7 +65,7 @@ subprojects {
 
     ext {
         springBootAdminVersion = '2.1.2'
-        springCloudVersion = 'Greenwich.RELEASE'
+        springCloudVersion = 'Greenwich.SR1'
         springFrameworkVersion = '5.1.4.RELEASE'
 
         nacosVersion = '0.9.0.RELEASE'
