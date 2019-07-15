@@ -23,7 +23,7 @@ buildscript {
 
 allprojects {
     apply plugin: 'idea'
-    apply plugin: 'eclipse'
+    //apply plugin: 'eclipse'
 
     idea {
         module {
@@ -31,6 +31,10 @@ allprojects {
         }
     }
 
+    //指定编码格式
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
 }
 
 subprojects {
@@ -41,6 +45,8 @@ subprojects {
     apply plugin: 'docker'
     apply plugin: 'jacoco'
 
+    group 'com.lion'
+    version = '1.0.0'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
@@ -129,9 +135,22 @@ subprojects {
         configFile = 'src/main/resources/generatorConfig.xml'
     }
 
+    //1.LOGIN: docker login --username=xxx@qq.com registry.cn-shenzhen.aliyuncs.com
+    //2.RENAME: docker tag imgID registry.cn-shenzhen.aliyuncs.com/xxx/lion-admin-server:1.0.0
+    //3.PUSH: docker push registry.cn-shenzhen.aliyuncs.com/xxx/lion-admin-server:1.0.0
     // 添加docker插件task
     task buildDocker(type: Docker, dependsOn: build) {
-        //applicationName = applicationName
+        //插件分组
+        group 'docker'
+        //useApi true
+        hostUrl 'registry.cn-shenzhen.aliyuncs.com'
+        apiUsername 'xxxx@qq.com'
+        apiPassword 'xxxxx'
+        apiEmail 'xxxx@qq.com'
+        registry 'registry.cn-shenzhen.aliyuncs.com/springcloud-lion'
+
+        applicationName = jar.baseName
+        //push = true//推送远程仓库 开关
         tagVersion = version
         dockerfile = file('src/main/docker/Dockerfile')
         doFirst {

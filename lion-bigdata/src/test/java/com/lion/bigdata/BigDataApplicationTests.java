@@ -1,13 +1,8 @@
 package com.lion.bigdata;
 
-import com.lion.bigdata.demo.HelloWorld;
-import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -17,11 +12,12 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author Yanzheng
  * @date 2019/01/06
  */
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = BigDataApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class BigDataApplicationTests {
 
-    @LocalServerPort
+    /*@LocalServerPort
     private int port;
 
     @Autowired
@@ -48,6 +44,6 @@ public class BigDataApplicationTests {
         ResponseEntity<String> response1 = this.restTemplate.getForEntity(
                 url + "/test", String.class, "张三");
         System.out.println(String.format("/test 调用测试结果为：%s", response1.getBody()));
-    }
+    }*/
 
 }
