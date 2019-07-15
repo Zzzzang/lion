@@ -44,9 +44,9 @@ public class Swagger2Config {
                 .title("标题：lion-demo-provider 使用 Swagger2 构建 API 接口文档")
                 //描述
                 .description("描述：用于 lion-demo-provider 接口查看")
-                .termsOfServiceUrl("https://github.com/micyo202")
+                .termsOfServiceUrl("https://github.com/Zzzzang")
                 //创建人
-                .contact(new Contact("Yanzheng", "https://github.com/micyo202", "micyo202@163.com"))
+                .contact(new Contact("Yanzheng", "https://github.com/Zzzzang", "micyo202@163.com"))
                 .version("版本号：1.0.0")
                 .build();
     }

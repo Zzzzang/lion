@@ -1,23 +1,23 @@
 # Lion
 
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/logo.png" alt="logo" title="logo">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/logo.png" alt="logo" title="logo">
 </p>
 
 [![Build Status](https://travis-ci.org/micyo202/lion.svg?branch=master)](https://travis-ci.org/micyo202/lion)
 [![Codecov](https://codecov.io/gh/micyo202/lion/branch/master/graph/badge.svg)](https://codecov.io/gh/micyo202/lion)
-[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/micyo202/lion)
-[![Since](https://img.shields.io/badge/Since-2019-199EC4.svg)](https://github.com/micyo202/lion)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/Zzzzang/lion)
+[![Since](https://img.shields.io/badge/Since-2019-199EC4.svg)](https://github.com/Zzzzang/lion)
 [![Java](https://img.shields.io/badge/Java-1.8-yellow.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 [![Scala](https://img.shields.io/badge/Scala-2.11.12-D72B2A.svg)](https://www.scala-lang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-5.3.1-01BC7E.svg)](https://gradle.org)
 [![Spring Boot](https://img.shields.io/badge/SpringBoot-2.1.6.RELEASE-FF69B4.svg)](https://spring.io/projects/spring-boot/)
 [![Spring Cloud](https://img.shields.io/badge/SpringCloud-Greenwich.SR1-5DBF3D.svg)](https://spring.io/projects/spring-cloud)
-[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/micyo202/lion/blob/master/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/micyo202/lion.svg?style=social&label=Stars)](https://github.com/micyo202/lion)
-[![GitHub Forks](https://img.shields.io/github/forks/micyo202/lion.svg?style=social&label=Fork)](https://github.com/micyo202/lion)
+[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/Zzzzang/lion/blob/master/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/micyo202/lion.svg?style=social&label=Stars)](https://github.com/Zzzzang/lion)
+[![GitHub Forks](https://img.shields.io/github/forks/micyo202/lion.svg?style=social&label=Fork)](https://github.com/Zzzzang/lion)
 
-**注：该项目是基于SpringCloud微服务架构的，若要使用基于Dubbo的RPC架构项目请查看本人yan项目，前往地址：[https://github.com/micyo202/yan](https://github.com/micyo202/yan)，项目采用[Nacos v1.0.0](https://nacos.io)作为服务注册/发现、配置中心（若要查看Eureka版，请切换分支到[Eureka](https://github.com/micyo202/lion/tree/eureka)）**
+**注：该项目是基于SpringCloud微服务架构的，若要使用基于Dubbo的RPC架构项目请查看原始作者micyo202的yan项目，前往地址：[https://github.com/micyo202/yan](https://github.com/Zzzzang/yan)，项目采用[Nacos v1.0.0](https://nacos.io)作为服务注册/发现、配置中心（若要查看Eureka版，请切换分支到[Eureka](https://github.com/Zzzzang/lion/tree/eureka)）**
 
 ---
 
@@ -38,12 +38,12 @@
 ## 近期更新
 **2019-05-15：添加分布式锁，在需要上锁的方法上使用注解@Locker即可，实现原理Redisson请参考：[https://github.com/redisson/redisson/wiki](https://github.com/redisson/redisson/wiki)**
 
-**2019-05-05：添加双buffer分布式自增ID算法服务[lion-id](https://github.com/micyo202/lion/tree/master/lion-id)，支持高并发。设计思路来自：[一线大厂的分布式唯一ID生成方案是什么样的？](https://blog.csdn.net/bntX2jSQfEHy7/article/details/89530118)**
+**2019-05-05：添加双buffer分布式自增ID算法服务[lion-id](https://github.com/Zzzzang/lion/tree/master/lion-id)，支持高并发。设计思路来自：[一线大厂的分布式唯一ID生成方案是什么样的？](https://blog.csdn.net/bntX2jSQfEHy7/article/details/89530118)**
 
 ## 项目架构图
 
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/frame.png" alt="frame" title="frame">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/frame.png" alt="frame" title="frame">
 </p>
 
 ## 说明
@@ -246,43 +246,43 @@ lion -- 根目录
 
 #### 服务注册/发现、配置中心
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/nacos-config.png" alt="nacos-config" title="nacos-config">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/nacos-config.png" alt="nacos-config" title="nacos-config">
 </p>
 
 #### 服务详情
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/nacos-details.png" alt="nacos-details" title="nacos-details">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/nacos-details.png" alt="nacos-details" title="nacos-details">
 </p>
 
 #### 服务监控
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/admin-wallboard.png" alt="admin-wallboard" title="admin-wallboard">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/admin-wallboard.png" alt="admin-wallboard" title="admin-wallboard">
 </p>
 
 #### 服务监控详情
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/admin-details.png" alt="admin-details" title="admin-details">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/admin-details.png" alt="admin-details" title="admin-details">
 </p>
 
 #### 链路追踪服务
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/zipkin.png" alt="zipkin" title="zipkin">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/zipkin.png" alt="zipkin" title="zipkin">
 </p>
 
 #### 服务实时调用情况
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/turbine.png" alt="turbine" title="turbine">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/turbine.png" alt="turbine" title="turbine">
 </p>
 
 #### 数据源监控
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/druid.png" alt="druid" title="druid">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/druid.png" alt="druid" title="druid">
 </p>
 
 #### API 文档
 <p align="center" >
-  <img src="https://github.com/micyo202/lion/raw/master/images/swagger.png" alt="swagger" title="swagger">
+  <img src="https://github.com/Zzzzang/lion/raw/master/images/swagger.png" alt="swagger" title="swagger">
 </p>
 
 ## 九、许可证
-[MIT License](https://github.com/micyo202/lion/blob/master/LICENSE)
+[MIT License](https://github.com/Zzzzang/lion/blob/master/LICENSE)
